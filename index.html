@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="list-icon.png">
+    <style>
+        @media screen and (max-width: 540px) {
+
+            h1 {
+                font-size: 29px;
+            }
+
+            #container {
+                height: 57%;
+                border-radius: 5px;
+                margin-bottom: 50px;
+                margin-top: 30px;
+            }
+
+            p {
+                padding: 15px;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            input[type='text'] {
+                width: 150px;
+                padding: 10px;
+                border-radius: 5px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                margin-right: 5px;
+                border: 1px solid;
+            }
+
+            #enviar {
+                width: 70px;
+                padding: 10px;
+            }
+
+            #enviar:active {
+                color: white;
+                background-color: #AA29F2;
+                border: 1px solid black;
+            }
+
+            .apagar {
+                padding: 10px;
+                border: 1px solid;
+                margin-left: 5px;
+            }
+
+            .apagar:active {
+                color: white;
+                background-color: #AA29F2;
+                border: 1px solid black;
+            }
+        }
+
+        @media screen and (max-height: 772px) {
+
+            #container {
+                height: 60vh;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-height: 584px) {
+
+            #container {
+                height: 45vh;
+                border-radius: 5px;
+                margin-bottom: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-height: 474px) {
+
+            #container {
+                height: 30vh;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="window">
+        <h1>Lista de Tarefas</h1>
+        <form method="get">
+            <input type="text" id="text" placeholder="Digite algo">
+            <input type="button" value="ENVIAR" onclick="add()" id="enviar">
+        </form>
+
+        <div id='container'>
+        </div>
+
+        <input type="button" value="REMOVER NOTAS" onclick="removeItems()" class="apagar">
+        <input type="button" value="APAGAR TUDO" onclick="removeAll()" class="apagar">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
