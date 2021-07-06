@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "milk";
+    src: url(milk.ttf);
+}
+
+.tasks{
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+input[type='radio']{
+   width: 20px;
+   height: 20px;
+}
+
+input[type='radio']:checked{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 5px solid #fb4474;
+    border-radius: 100%;
+}
+
+#window{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #ff6539, #fb4474);
+    text-align: center;
+}
+
+#container{
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.938);
+    text-align: left;
+    color: black;
+    overflow: auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+p{
+    padding: 15px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+input[type='text']{
+    width: 45%;
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: 1px solid;
+}
+
+h1{ 
+   padding-top: 20px;
+   font-family: "milk";
+   color: white;
+   font-size: 50px;
+}
+
+
+input[type='text']{
+    width: 45%;
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: 1px solid;
+}
+
+#send{
+    width: 100px;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.apagar{
+    padding: 13px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid; 
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#send:hover{
+    color: white;
+    background-color: #AA29F2;
+    border: 1px solid black;
+}
+
+.apagar:hover{
+    color: white;
+    background-color: #AA29F2;
+    border: 1px solid black;
+}
+
