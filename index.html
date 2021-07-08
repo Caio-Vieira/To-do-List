@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="list-icon.png">
+</head>
+
+<body onload="loadTasks()">
+
+    <div id="window">
+        <h1>Lista de Tarefas</h1>
+        
+        <input type="text" id="text" placeholder="Insira uma nota">
+        <button id="send">ADICIONAR</button>
+        
+
+        <div id='container'>
+        </div>
+
+        <input type="button" value="REMOVER NOTA" onclick=removeItem() class="apagar">
+        <input type="button" value="APAGAR TUDO" onclick=removeAll() class="apagar">
+    </div>
+   
+ 
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
